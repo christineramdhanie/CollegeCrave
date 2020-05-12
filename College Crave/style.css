@@ -1,0 +1,164 @@
+body {
+    background-color: #D7F9FF;
+    margin: 0px;
+}
+
+h3 {
+    color: black;
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+output {
+    display: none;
+}
+
+.recipe_container {
+    width: 100%;
+}
+
+.img_cont {
+    display: block;
+    width: 312px;
+    height: 231px;
+    float: left;
+    border-style: solid;
+    border-color: #2B2D42;
+}
+
+.details_cont {
+    display: block;
+    height: 232px;
+    padding-top: 1px;
+    padding-left: 22%;
+    position: static;
+}
+
+.recipeimg {
+    height: 231px;
+    width: 312px;
+}
+
+.recipeurl {
+    color: red;
+    text-decoration: none;
+}
+
+.recipeurl::visited {
+    color: red;
+}
+
+.recipeurl:hover {
+    color: yellow;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 10px;
+    float: left;
+}
+
+header::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+.navbar {
+    display: block;
+    background-color: #15A4C6;
+    height: 82px;
+    margin-bottom: 1%;
+}
+
+nav {
+    float: right;
+    width: 100%;
+    height: 100%;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 15px;
+    text-align: center;
+    position: relative;
+}
+
+nav a {
+    color: #2B2D42;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a::visited {
+    color: #2B2D42;
+}
+
+nav-a:hover {
+    color: black;
+}
+
+nav a::before {
+    content: ' ';
+    display: block;
+    height: 7px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav a::visited {
+    color: #2B2D42;
+}
+
+input {
+    height: 24px;
+    width: 100%;
+}
+
+.list {
+    display: inline-block;
+    margin-left: 8%;
+}
+
+.searchcontainer {
+    display: block;
+    float: right;
+    width: 50%;
+    margin-top: 19px;
+}
+
+.searchbarcont {
+    display: inline-block;
+    width: 50%;
+}
+
+.searchbutton {
+    padding: 1px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.searchbuttoncontainer {
+    display: inline;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Open+Sans:ital@1&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background: #D7F9FF;
+        }
+        
+        .logo {
+            position: absolute;
+            margin-left: 10px;
+            float: left;
+        }
+        
+        header::after {
+            content: ' ';
+            display: table;
+            clear: both;
+        }
+        
+        .navbar {
+            display: block;
+            background-color: #15A4C6;
+            height: 82px;
+            margin-bottom: 1%;
+        }
+        
+        nav {
+            float: right;
+            width: 100%;
+            height: 100%;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin-left: 70px;
+            padding-top: 15px;
+            text-align: center;
+            position: relative;
+        }
+        
+        nav a {
+            color: #2B2D42;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Crimson Text', serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        nav a::visited {
+            color: #2B2D42;
+        }
+        
+        nav-a:hover {
+            color: black;
+        }
+        
+        nav a::before {
+            content: ' ';
+            display: block;
+            height: 7px;
+            width: 100%;
+            background-color: #444;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;
+        }
+        
+        nav a:hover::before {
+            width: 100%;
+        }
+        
+        nav a::visited {
+            color: #2B2D42;
+        }
+        
+        input {
+            height: 24px;
+            width: 100%;
+        }
+        
+        .list {
+            display: block;
+            float: right;
+            margin-right: 8%;
+        }
+        
+        h3 {
+            color: black;
+        }
+        
+        .meal {
+            margin: 20px 0;
+        }
+        
+        .feelinghungry {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .randomimgcont {
+            text-align: center;
+        }
+        
+        .randomdetailscont {
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            padding-left: 12%;
+            padding-right: 12%;
+        }
+    </style>
+
+    <title>COLLEGE CRAVE</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="logo" height="89px" width="89px">
+            </div>
+
+            <nav>
+                <div class="list">
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="recipesearch.html">Recipes</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+    <br><br><br><br><br><br>
+    <div class="container">
+        <div class="feelinghungry">
+            <h3> Feeling hungry? </h3>
+            <h5> Get a random meal by clicking below </h5>
+
+            <button class="getmealbutton" onclick="randomsearch()"> Get Meal 🍔 </button>
+
+        </div>
+        <div id="meal" class="row meal"></div>
+    </div>
+
+    <script src="randomrecipe.js">
+    </script>
+
+</body>
+<footer style="text-align:center"> &#169 IcyTea</footer>
+
+</html>

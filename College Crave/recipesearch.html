@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+    <title> College Crave </title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Jost&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Open+Sans:ital@1&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="logo" height="89px" width="89px">
+            </div>
+
+            <nav>
+                <div class="list">
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="recipesearch.html">Recipes</a></li>
+                    </ul>
+                </div>
+
+                <div class="searchcontainer">
+                    <div class=searchbarcont>
+                        <input id="searchbar" type="text" placeholder="Find a recipe..." name="tempsearchword">
+                    </div>
+                    <div class="searchbuttoncontainer">
+                        <button type="button" class="searchbutton" onclick="search()"> Search </button>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div id="output">
+
+    </div>
+
+    <script src="recipesearch.js">
+    </script>
+
+</body>
+
+<footer style="text-align:center"> &#169 IcyTea</footer>
+
+</html>
